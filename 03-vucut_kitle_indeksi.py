@@ -1,13 +1,13 @@
 # Kullanıcıdan boy (metre cinsinden) ve kilo (kilogram cinsinden) bilgisi alarak BMI hesaplayan program
 
 # Kullanıcıdan boy bilgisini al (metre cinsinden)
-height = float(input("Boyunuzu metre cinsinden girin (örneğin 1.75): "))
+boy = float(input("Boyunuzu metre cinsinden girin (örneğin 1.75): "))
 
 # Kullanıcıdan kilo bilgisini al (kilogram cinsinden)
-weight = float(input("Kilonuzu kilogram cinsinden girin (örneğin 70): "))
+kilo = float(input("Kilonuzu kilogram cinsinden girin (örneğin 70): "))
 
 # BMI hesaplama formülü: kilo / (boy * boy)
-bmi = weight / (height ** 2)
+bmi = kilo/ (boy ** 2)
 
 # BMI değerini ekrana yazdır
 print(f"Vücut Kitle İndeksiniz (BMI): {bmi:.2f}")
